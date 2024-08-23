@@ -2,6 +2,34 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# CNAPP Dashboard
+
+A web-based dashboard application built with React, allowing users to add, remove, and search for widgets such as bar charts, line charts, and donut charts. This project also demonstrates the integration of Redux for state management and Tailwind CSS for styling.
+
+## Features
+
+- **Dynamic Widget Management**: Add and remove widgets dynamically within categories.
+- **Search Functionality**: Search widgets by name to quickly find what you need.
+- **Multiple Chart Types**: Supports bar charts, line charts, and donut charts.
+- **State Management**: Utilizes Redux for managing the state of categories and widgets.
+- **Responsive Design**: Styled with Tailwind CSS for a responsive and modern UI.
+
+## Technologies Used
+
+- **React**: Frontend library for building the user interface.
+- **Redux**: State management library for managing application state.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **React-Redux**: Official Redux bindings for React.
+
+## Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- **Node.js**: Install Node.js and npm from [Node.js](https://nodejs.org/).
+- **Git**: Install Git from [Git](https://git-scm.com/).
+
 ## Available Scripts
 
 In the project directory, you can run:
