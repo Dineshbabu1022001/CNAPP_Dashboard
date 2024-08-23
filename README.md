@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://redesigned-train-v66g6w659g643x967-3000.app.github.dev/)
+To See the design of the project [Click Here](https://redesigned-train-v66g6w659g643x967-3000.app.github.dev/)
 
 # CNAPP Dashboard
 
