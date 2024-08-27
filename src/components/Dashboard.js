@@ -43,6 +43,10 @@ const Dashboard = () => {
   };
 
   const handleAddWidget = () => {
+    if (!widgetName) {
+      alert('Please enter a widget name.');
+      return;
+    }
     if (selectedCategoryId && widgetName) {
       const newWidget = {
         id: `widget-${Date.now()}`,
