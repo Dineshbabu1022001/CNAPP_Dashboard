@@ -43,10 +43,6 @@ const Dashboard = () => {
   };
 
   const handleAddWidget = () => {
-    if (!widgetName) {
-      alert('Please enter a widget name.');
-      return;
-    }
     if (selectedCategoryId && widgetName) {
       const newWidget = {
         id: `widget-${Date.now()}`,
@@ -54,6 +50,10 @@ const Dashboard = () => {
         type: widgetType,
         data: getDefaultData(widgetType),
       };
+       if (!widgetName) {
+      alert('Please enter a widget name.');
+      return;
+    }
       dispatch(addWidget({ categoryId: selectedCategoryId, widget: newWidget }));
       setWidgetName('');
       setSelectedCategoryId(null);
