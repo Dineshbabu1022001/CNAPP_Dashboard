@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-To See the design of the project [Click Here](https://cnapp-dashboard-olive.vercel.app/))
+To See the design of the project [Click Here](https://cnapp-dashboard-olive.vercel.app/)
 
 # CNAPP Dashboard
 
