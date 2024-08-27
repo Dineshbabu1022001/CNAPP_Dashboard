@@ -59,19 +59,19 @@ const Dashboard = () => {
   return (
     <div className="container mx-auto p-4">
       <header className="mb-4">
-        <nav className="flex items-center justify-between bg-gray-100 p-4 rounded-lg">
+        <nav className="flex flex-wrap items-center justify-between bg-gray-100 p-4 rounded-lg">
           <div className="flex items-center space-x-4">
             <span className="text-lg font-semibold">Home</span>
             <span className="text-gray-500">&gt;</span>
             <span className="text-lg font-semibold">Dashboard V2</span>
           </div>
-          <div className="relative">
+          <div className="relative mt-2 md:mt-0">
             <input
               type="text"
               placeholder="Search widgets..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full md:w-auto"
             />
             <svg
               className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"
@@ -91,10 +91,10 @@ const Dashboard = () => {
       </header>
 
       <main>
-        <p className="font-bold text-2xl my-5">CNAPP Dashboard</p>
-        <div className="flex items-center space-x-4 mb-4">
+        <p className="font-bold text-2xl my-5 text-center sm:text-left">CNAPP Dashboard</p>
+        <div className="flex flex-wrap items-center space-y-4 space-x-0 sm:space-x-4 sm:space-y-0 mb-4 sm:text-left">
           <select
-            className="border border-gray-300 p-2 rounded-lg"
+            className="border border-gray-300 p-2 rounded-lg w-full sm:w-auto"
             value={selectedCategoryId || ''}
             onChange={(e) => setSelectedCategoryId(e.target.value)}
           >
@@ -110,10 +110,10 @@ const Dashboard = () => {
             placeholder="Widget Name"
             value={widgetName}
             onChange={(e) => setWidgetName(e.target.value)}
-            className="border border-gray-300 p-2 rounded-lg"
+            className="border border-gray-300 p-2 rounded-lg w-full sm:w-auto"
           />
           <select
-            className="border border-gray-300 p-2 rounded-lg"
+            className="border border-gray-300 p-2 rounded-lg w-full sm:w-auto"
             value={widgetType}
             onChange={(e) => setWidgetType(e.target.value)}
           >
@@ -123,7 +123,7 @@ const Dashboard = () => {
           </select>
           <button
             onClick={handleAddWidget}
-            className="bg-blue-500 text-white p-2 rounded-lg"
+            className="bg-blue-500 text-white p-2 rounded-lg w-full sm:w-auto"
           >
             Add Widget
           </button>
