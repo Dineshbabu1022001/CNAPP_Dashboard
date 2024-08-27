@@ -45,7 +45,7 @@ const Category = ({ category }) => {
   return (
     <section className="mb-8">
       <h2 className="text-2xl font-bold mb-4">{category.name}</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {category.widgets.map((widget) => (
           <div key={widget.id} className="relative border-2 border-gray-300 p-4 rounded-lg">
             <Widget widget={widget} />
@@ -58,18 +58,18 @@ const Category = ({ category }) => {
           </div>
         ))}
       </div>
-      <div className="mt-4">
+      <div className="mt-4 flex flex-wrap items-center space-y-4 sm:space-y-0 sm:space-x-4">
         <input
           type="text"
           placeholder="Widget Name"
           value={widgetName}
           onChange={(e) => setWidgetName(e.target.value)}
-          className="border p-2 mr-2 rounded-lg"
+          className="border p-2 rounded-lg w-full sm:w-auto"
         />
         <select
           value={widgetType}
           onChange={(e) => setWidgetType(e.target.value)}
-          className="border p-2 mr-2 rounded-lg"
+          className="border p-2 rounded-lg w-full sm:w-auto"
         >
           <option value="bar-chart">Bar Chart</option>
           <option value="line-chart">Line Chart</option>
@@ -77,7 +77,7 @@ const Category = ({ category }) => {
         </select>
         <button
           onClick={handleAddWidget}
-          className="bg-blue-500 text-white p-2 rounded-lg"
+          className="bg-blue-500 text-white p-2 rounded-lg w-full sm:w-auto"
         >
           Add Widget
         </button>
