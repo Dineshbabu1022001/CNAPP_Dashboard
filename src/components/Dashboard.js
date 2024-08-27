@@ -111,6 +111,7 @@ const Dashboard = () => {
             value={widgetName}
             onChange={(e) => setWidgetName(e.target.value)}
             className="border border-gray-300 p-2 rounded-lg w-full sm:w-auto"
+            required
           />
           <select
             className="border border-gray-300 p-2 rounded-lg w-full sm:w-auto"
