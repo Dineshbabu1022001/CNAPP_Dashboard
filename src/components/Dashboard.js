@@ -94,7 +94,7 @@ const Dashboard = () => {
         <p className="font-bold text-2xl my-5 text-center sm:text-left">CNAPP Dashboard</p>
         <div className="flex flex-wrap items-center space-y-4 space-x-0 sm:space-x-4 sm:space-y-0 mb-4 sm:text-left">
           <select
-            className="border border-gray-300 p-2 rounded-lg w-full"
+            className="border border-gray-300 p-2 rounded-lg w-full sm:w-auto"
             value={selectedCategoryId || ''}
             onChange={(e) => setSelectedCategoryId(e.target.value)}
           >
